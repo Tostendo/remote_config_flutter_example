@@ -2,14 +2,8 @@
 
 1. Setup apps within Firebase (follow the instructions). For that, Google service credentials need to be put in ios and android folder of the repository.
 
-2. use firebase_remote_config sdk from firebase and include into your pubspec.yaml:
+2. use firebase_remote_config sdk from firebase and include into your pubspec.yaml (firebase_remote_config: ^0.4.0)
 
-<code>
-dependencies:
-flutter:
-sdk: flutter
-firebase_remote_config: ^0.4.0
-</code>
 
 3. Configure one or more parameters in firebase unter “Remote Config” with standard values. Here it is easily possible to restrict to platforms, users and much more (if google analytics is also included)
 
