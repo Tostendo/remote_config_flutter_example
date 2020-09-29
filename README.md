@@ -5,7 +5,7 @@
 2. use firebase_remote_config sdk from firebase and include into your pubspec.yaml (firebase_remote_config: ^0.4.0)
 
 
-3. Configure one or more parameters in firebase unter “Remote Config” with standard values. Here it is easily possible to restrict to platforms, users and much more (if google analytics is also included)
+3. Configure one or more parameters (here I configured a boolean names `showInvasiveButton` and a string namend `welcomeMessage` in firebase unter “Remote Config” with standard values. Here it is easily possible to restrict to platforms, users and much more (if google analytics is also included)
 
 4. Let app use remote config (see example code) and configure default values. They will be used on first startup. Then the config will be fetched and cached for a defined amount of time, but will only be used on from the next startup (to avoid flakiness)
 
